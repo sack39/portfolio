@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<!--このgoogleformsをコピーしてbodyタグに入れて使う-->
+
+<!--まずはgoogleformsで「名前」「メアド」「題名」「メッセージ」の項目を作る。その後右上の目玉マークをクリックし、右クリックでソースを出す。ソースから検索し以下を探しコピペする。-->
+
+
+<section class="section" id="contact">
+    <div class="container" >
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="text-center">
+                    <div id="target">
+                        <h2><span class="font-weight-bold">Contact</span> Us</h2>
+                    </div>
+                    <p class="text-muted mx-auto section-subtitle mt-3">お仕事のご相談は、メールからお気軽にご連絡ください。<br>
+                    日本に滞在していない時は、電話は繋がりにくい場合がございます。</p>
+                </div>
+            </div>
+        </div> 
+        <div class="row mt-5">
+            <div class="col-lg-4">
+                <div class="text-center">
+                    <div>
+                        <i class="mbri-mobile2 text-custom h1"></i>
+                    </div>
+                    <div class="mt-3">
+                        <h5 class="mb-0 contact_detail-title font-weight-bold">お電話</h5>
+                        <p class="text-muted">080-3154-5864</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="text-center">
+                    <div>
+                        <i class="mbri-letter text-custom h1"></i>
+                    </div>
+                    <div class="mt-3">
+                        <h5 class="mb-0 contact_detail-title font-weight-bold">メール</h5>
+                        <p class="text-muted">mementosakuma@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="text-center">
+                    <div>
+                        <i class="mbri-pin text-custom h1"></i>
+                    </div>
+                    <div class="mt-3">
+                        <h5 class="mb-0 contact_detail-title font-weight-bold">オフィス</h5>
+                        <p class="text-muted">北海道札幌市○○○○</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-12">
+                <div class="form-kerri contact_form" >
+                    <div id="message"></div>
+                    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSef1DnwND9jK8pQD_R5BxVFbHfXHkIqUCwt7G8YDOSkRJZEhw/formResponse" method="post" name="contact-form" target="dummyIframe">
+                    <!--googleformsで「<form」を検索し、その後ろの「action="----"」をコピーし入れる。-->
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group mt-2">
+                                    <input class="form-control" type="text" name="entry.167771466" autocomplete="name" id="name"  placeholder="お名前" required >
+                                    <!--googleformsで「<input」を検索し、その後ろの「name="----"」をコピーし入れる。[entry.0000000000]の事が多い-->
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group mt-2">
+                                    <input class="form-control" type="email" name="entry.1045781291" autocomplete="email" id="email"  placeholder="メールアドレス" required >
+                                    <!--googleformsで「<input」を検索し、その後ろの「name="----"」をコピーし入れる。[entry.0000000000　もしくは　emailAddress]の事が多い-->
+                                </div>
+                            </div>                                
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group mt-2">
+                                    <input class="form-control" type="text" name="entry.839337160" id="subject" placeholder="題名" >
+                                    <!--googleformsで「<input」を検索し、その後ろの「name="----"」をコピーし入れる。[entry.0000000000]の事が多い-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group mt-2">
+                                    <textarea class="form-control"  name="entry.151377491" id="comments" rows="4" placeholder="メッセージ" required ></textarea>
+                                    <!--googleformsで「<textarea」を検索し、その後ろの「name="----"」をコピーし入れる。[entry.0000000000]の事が多い-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 text-right">
+                                <input type="submit" value="送信" id="submit" name="send" class="submitBnt btn btn-custom text-uppercase" >
+                                <div id="simple-msg"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
